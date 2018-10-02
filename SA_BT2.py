@@ -28,18 +28,8 @@ class Solution:
         ans.append(node.val)
         self.visit(node.right,ans)
 
-    def isValidBst(self,root):
-        if root is None:
-            return True
-        ans=[]
-        self.visit(root,ans)
-        if len(ans)<2:
-            return True
-        for i in range(len(ans) - 1):
-            if ans[i] >= ans[i + 1]:
-                return False
-            else:
-                return True
+    def ouyue(self):
+        return 2
           #哎 万一值一样呢？？？ 可笑！可叹
 
         # if ans==ans.sort():
